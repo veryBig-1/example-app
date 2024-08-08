@@ -1,0 +1,126 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: #f8f9fa;
+  color: #343a40;
+  margin: 0;
+  padding: 0;
+}
+
+.note-container {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.new-note-btn {
+  width: 100%;
+  display: block;
+  margin: 0 0 20px;
+  background-color: #007bff;
+  color: white;
+  padding: 15px 0;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.new-note-btn:hover {
+  background-color: #0056b3;
+}
+
+.notes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.note {
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  width: 280px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+  cursor: pointer;
+}
+
+.note:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.note .note-body {
+  font-size: 16px;
+  margin-bottom: 20px;
+  color: #495057;
+}
+
+.note .note-buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.note-buttons a,
+.note-buttons button {
+  padding: 8px 12px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.note-buttons .note-edit-button {
+  background-color: #17a2b8;
+  color: white;
+  border: none;
+}
+
+.note-buttons .note-edit-button:hover {
+  background-color: #117a8b;
+  transform: scale(1.05);
+}
+
+.note-buttons .note-delete-button {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+}
+
+.note-buttons .note-delete-button:hover {
+  background-color: #bd2130;
+  transform: scale(1.05);
+}
+
+.note-date {
+  font-size: 12px;
+  font-style: italic;
+  color: #868e96;
+}
+
+.success-message {
+  padding: 15px 20px;
+  background-color: #28a745;
+  color: white;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 16px;
+}
